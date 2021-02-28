@@ -1,0 +1,48 @@
+@startuml
+
+class Institut{
+    - nom
+    - departementList: Departement[]
+}
+class Departement{
+    - nom
+    - enseignantList: Enseignant[]
+    - etudiantList: Etudiant[]
+}
+class Personne
+class Etudiant{
+    {static} - nbrEtudiant
+}
+class Enseignant{
+    - attr
+
+    - calculeSalaire(): Double
+    - calculeIGR(): Double
+}
+class Cours
+
+class EnseignantPermanent{
+    - calculeSalaire(): Double
+    - calculeIGR(): Double
+
+}
+class EnseignantVacataire{
+    - calculeSalaire(): Double
+    - calculeIGR(): Double
+
+}
+
+Institut --* "1..*" Departement
+Departement --* "1..*" Etudiant
+Departement --* "1..*" Enseignant
+
+Etudiant -up-|> Personne
+Enseignant -up-|> Personne
+
+Cours "0..*" -right--* "1" Enseignant
+Cours "1..*" -right--* "1..*" Etudiant
+
+EnseignantPermanent -up--|> Enseignant
+EnseignantVacataire -up--|> Enseignant
+
+@enduml

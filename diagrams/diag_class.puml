@@ -1,0 +1,8 @@
+@startuml
+class Personne
+class Enfant
+
+Enfant --|> Personne
+Personne -- "0..*" Enfant
+Enfant -- "0..*" Enfant
+@enduml

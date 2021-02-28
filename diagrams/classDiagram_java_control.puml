@@ -1,0 +1,418 @@
+ @startuml
+ class Agent{
+     - numSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+     - codeCNSS: String
+     {static} - tarifSemaine: Double 
+ }
+ class AgentTemporaire{
+     {static} - tarifSemaine: Double
+     {static} - primeRisque: Double
+ }
+ AgentPermanent -up-|> Agent
+ AgentTemporaire -up-|> Agent
+ 
+ @enduml     - numSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ @endumlSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentTemporaire -up-|> Agent
+ @endumling 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentPermanent -up-|> Agent
+     - numSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ @endumlSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentTemporaire -up-|> Agent
+ 
+ @enduml    - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentPermanent -up-|> Agent
+     - numSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ @endumlSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentTemporaire -up-|> Agent
+ 
+     - numSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ @endumlSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentTemporaire -up-|> Agent
+ @endumling 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentPermanent -up-|> Agent
+     - numSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ @endumlSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentTemporaire -up-|> Agent
+ 
+ @enduml    - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentPermanent -up-|> Agent
+     - numSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ @endumlSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentTemporaire -up-|> Agent
+ 
+     - numSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ @endumlSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentTemporaire -up-|> Agent
+ @endumling 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentPermanent -up-|> Agent
+     - numSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ @endumlSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentTemporaire -up-|> Agent
+ 
+ @enduml    - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentPermanent -up-|> Agent
+     - numSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ @endumlSom: String
+     - nom: String 
+     - adresse: String
+     - date_embauche: String
+     - codeService: String
+     - salaire: Double
+
+
+ }
+ class AgentPermanent {
+
+ }
+ class AgentTemporaire{
+
+ }
+ AgentPermanent -up-|> Agent
+ AgentTemporaire -up-|> Agent
+ 

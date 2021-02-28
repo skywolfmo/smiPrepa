@@ -1,0 +1,14 @@
+@startuml
+class Artist
+class Oeuvre
+class Groupe
+class Enregistrement
+
+' Artist "1..*" --- Oeuvre
+Artist "1..*" --- "0..1" Groupe
+Artist "1" --- Groupe
+
+Enregistrement --up- "1..*" Groupe
+Enregistrement --up- "1..*" Artist
+Enregistrement -up- Oeuvre
+@enduml

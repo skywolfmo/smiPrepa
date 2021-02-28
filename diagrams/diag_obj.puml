@@ -1,0 +1,16 @@
+@startuml
+object "Mokhtar:Person" as a1
+object "Halima:Person" as a2
+object "Ahmed:Enfant" as a3
+object "Chaima:Enfant" as a4
+object "Mehdi:Enfant" as a5
+object ":Enfant" as a6
+object ":Enfant" as a7
+a1 -- "1" a3
+a2 -- "1" a3
+a3 -- "1" a4
+a3 -- "1" a5
+a5 -- "1..*" a7
+a4 -- "1..*" a6
+
+@enduml
