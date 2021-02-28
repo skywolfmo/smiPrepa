@@ -7,9 +7,8 @@ public class Etudiant extends Personne {
     private String departementName;
     private ArrayList<Cour> coursList = new ArrayList<Cour>();
 
-    public Etudiant(String nom, Integer codeId, String email, String dateInscription, String numCIN,
-            String departementName) {
-        super(nom, codeId, email);
+    public Etudiant(String nom, String numCIN, String email, String dateInscription, String departementName) {
+        super(nom, Etudiant.nbrEtudiant, email);
         Etudiant.nbrEtudiant += 1;
         this.dateInscription = dateInscription;
         this.numCIN = numCIN;
@@ -19,9 +18,11 @@ public class Etudiant extends Personne {
     public ArrayList<Cour> getCoursList() {
         return coursList;
     }
-    public void addCour(Cour cour){
+
+    public void addCour(Cour cour) {
         coursList.add(cour);
     }
+
     public void setCoursList(ArrayList<Cour> coursList) {
         this.coursList = coursList;
     }
@@ -49,5 +50,5 @@ public class Etudiant extends Personne {
     public void setDateInscription(String dateInscription) {
         this.dateInscription = dateInscription;
     }
-    
+
 }

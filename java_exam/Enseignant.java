@@ -8,8 +8,8 @@ public class Enseignant extends Personne {
     private Double salaire;
     private ArrayList<Cour> coursList = new ArrayList<Cour>();
 
-    public Enseignant(String nom, Integer codeId, String email, String grade, Integer tauxIgr, Double salaire) {
-        super(nom, codeId, email);
+    public Enseignant(String nom, String email, String grade, Integer tauxIgr, Double salaire) {
+        super(nom, Enseignant.nbrEns, email);
         Enseignant.nbrEns += 1;
         this.grade = grade;
         this.tauxIgr = tauxIgr;
@@ -49,6 +49,14 @@ public class Enseignant extends Personne {
 
     public void setGrade(String grade) {
         this.grade = grade;
+    }
+    public Double calculeSalaire(){
+        return salaire;
+    }
+    public Double calculeTauxIgr(){
+        // voir le tp
+        // TODO: 
+        return (double) (tauxIgr / tauxIgr);
     }
 
 }

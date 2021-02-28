@@ -5,21 +5,30 @@ public class Departement {
     private ArrayList<Enseignant> enseignantList = new ArrayList<Enseignant>();
     private ArrayList<Etudiant> etudiantList = new ArrayList<Etudiant>();
 
-    public Departement(String nom){
+    public Departement(String nom) {
         this.nom = nom;
     }
-    public Departement(String nom, ArrayList<Enseignant> enseignantList, ArrayList<Etudiant> etudiantList){
+
+    public Departement(String nom, ArrayList<Enseignant> enseignantList, ArrayList<Etudiant> etudiantList) {
         this.nom = nom;
         this.enseignantList = enseignantList;
         this.etudiantList = etudiantList;
     }
+    
 
-    public void addEtudiant(Etudiant e){
+    public Departement(String nom, ArrayList<Etudiant> etudiantList) {
+        this.nom = nom;
+        this.etudiantList = etudiantList;
+    }
+
+    public void addEtudiant(Etudiant e) {
         etudiantList.add(e);
     }
-    public void addEnseignant(Enseignant e){
+
+    public void addEnseignant(Enseignant e) {
         enseignantList.add(e);
     }
+
     public ArrayList<Etudiant> getEtudiantList() {
         return etudiantList;
     }

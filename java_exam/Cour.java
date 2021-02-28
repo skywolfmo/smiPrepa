@@ -1,13 +1,26 @@
+import java.util.ArrayList;
 
 public class Cour {
     private String nom;
-    private Integer volumeHoraire;
+    private static Integer volumeHoraire=45;
     private Enseignant responsable;
+    private ArrayList<Etudiant> etudiants = new ArrayList<Etudiant>();
 
-    public Cour(String nom, Integer volumeHoraire, Enseignant responsable) {
+    public Cour(String nom , Enseignant responsable, ArrayList<Etudiant> etudiants) {
         this.setNom(nom);
-        this.setVolumeHoraire(volumeHoraire);
         this.setResponsable(responsable);
+        this.setEtudiants(etudiants);
+    }
+
+    public void addEtudiant(Etudiant e){
+        etudiants.add(e);
+    }
+    public ArrayList<Etudiant> getEtudiants() {
+        return etudiants;
+    }
+
+    public void setEtudiants(ArrayList<Etudiant> etudiants) {
+        this.etudiants = etudiants;
     }
 
     public Enseignant getResponsable() {
@@ -18,13 +31,6 @@ public class Cour {
         this.responsable = responsable;
     }
 
-    public Integer getVolumeHoraire() {
-        return volumeHoraire;
-    }
-
-    public void setVolumeHoraire(Integer volumeHoraire) {
-        this.volumeHoraire = volumeHoraire;
-    }
 
     public String getNom() {
         return nom;
