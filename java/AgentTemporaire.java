@@ -1,6 +1,6 @@
-public class AgentTemporaire{
-    static private Double tarifSemaine = 800;
-    static private Double primeRisque = 5000;
+public class AgentTemporaire extends Agent{
+    static public Double tarifSemaine = 800.0;
+    static public Double primeRisque = 5000.0;
 
 
     public AgentTemporaire(Integer ns, String no, String a, String d, String co, String cnss, Integer numSemaine){
